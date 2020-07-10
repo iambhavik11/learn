@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Website</title>
+        <style>
+            
+            .navbar
+            {
+                background-color: rgb(163, 82, 82);
+                
+            }
+            .navbar-brand
+            {
+                font-size: x-large;
+                font-weight: 700;
+                color: rgb(179, 179, 179);
+            }
+            .navbar-toggler
+            {
+                color: rgb(179, 179, 179);
+                font-size:x-large;
+                
+            }
+            
+            .nav-link
+            {
+                color: rgb(179, 179, 179);
+                font-weight: 600;
+                font-size: large;
+                letter-spacing: 1px;
+                margin-left: 1rem;
+            }
+            @media(max-width: 767px)
+            {
+                .navbar
+                {
+                    background-color: rgba(163, 82, 82,0.80);
+                }
+                .navbar-nav
+                {
+                    text-align: right;
+                }
+            }
+            
+            .nav-link:hover , .nav-link:focus 
+            {
+                color: rgb(48, 47, 47);
+                background-color: rgba(173, 173, 173, 0.555);
+                padding: 5px;
+                margin-top: .5rem;
+            }
+            button:focus
+            {
+                outline: none;
+            }
+            #aboutus , #services
+            {
+                margin-top: 5.5em;
+            }
+            #heading
+            {
+                font-size: larger;
+                font-weight: 700;
+            }
+
+            .heading
+            {
+                font-size: x-large;
+                font-weight: 600;
+                color: gray;
+                text-align: center;
+                padding-bottom: .5rem;
+                
+            }
+            #learn
+            {
+                color: rgb(104, 103, 103);
+            }
+            #more
+            {
+                padding: 0.25em 0.25em 0.35em 0.25em;
+                border: 5px;
+                border-color: rgb(104, 103, 103);
+                background-color: rgb(211, 91, 91);
+                color: aliceblue;
+                border-radius: .3rem;
+            }
+            #services
+            {
+                
+                padding-bottom: 3rem;
+            }
+            #card-deck
+            {
+                margin-top: 2em;
+                display: flex;
+            }
+            .card
+            {
+                margin-left: 2em;
+                margin-right: 2em;
+                box-shadow: 6px 12px 8px rgba(191, 208, 209, 0.418);
+            }
+            @media(max-width: 1370px)
+            {
+                #card-deck
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                
+            }
+            @media(max-width: 500px)
+            {
+                .card
+                {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    margin-left: 0em;
+                    margin-right: 0em;
+                }
+            }
+            .links , .links:hover ,.p1
+            {
+                color: #474C52;
+                text-decoration: none;
+                font-size: large;
+                letter-spacing: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar  navbar-expand-md fixed-top">
+            <h2 class="navbar-brand">Learn</h2>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
+                <i class="fa fa-align-right" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="#myNav" class="nav-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#aboutus" class="nav-link">About Us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contactus" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="aboutus" class="container">
+            <h2 class="heading" id="about">
+                About Us
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </h2>
+            <!--mx-3 sm:ml-5 mt-4-->
+            <p class="text-center mt-3" id="heading">
+                Want to Learn Web Development?
+            </p>
+            <p class="text-center" id="learn">
+                Web development can range from developing a simple single static page of plain text to 
+                complex web-based internet applications (web apps), 
+                electronic businesses, and social network services. 
+                We are providing <span class="text-dark font-weight-bold">Front-End Skills</span>
+                     for Web Development like
+                <span class="text-success font-weight-bold">HTML , CSS , JAVASCRIPT.</span>
+                <br>
+                <h5 class="text-center">
+                    <button id="more">
+                        Learn More
+                    </button>
+                </h5>
+            </p>
+        </div>
+
+        <div id="services" class="container-fluid">
+            <h2 class="heading">
+                Services
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </h2>
+            <div class="d-flex justify-content-center" id="card-deck">
+                <div class="card shadow-lg  p-3 mb-5" style="width: 18rem;">
+
+                    <h4 class="card-title text-center pt-4 font-weight-bold text-dark">HTML</h4>
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                </div>
+
+                <div class="card p-3 mb-5" style="width: 18rem;">
+                    <h4 class="card-title text-center pt-4 font-weight-bold text-primary">CSS</h4>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card p-3 mb-5" style="width: 18rem;">
+                    <h4 class="card-title text-center pt-4 font-weight-bold text-success">JAVASCRIPT</h4>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                
+                <div class="card p-3 mb-5" style="width: 18rem;">
+                    <h4 class="card-title text-center pt-4 font-weight-bold text-info">FRAMEWORK</h4>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="contactus" class="container-fluid bg-light">
+            <h2 class="heading pt-4" id="contact">
+                Contact Us
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+            </h2>
+            <div class="container text-center">
+                <p class="text-dark pt-3 p1">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Mobile : </span><a href="tel:+919876543210" class="links">+919876543210</a>
+                </p>
+                <p class="text-dark p1">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>Email : </span><a href="mailto:example@gmail.com" class="links">
+                        example@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+        <footer class="bg-dark text-light p-2 text-center">
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+            Copyright. All Right Reserved
+        </footer>
+        
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS important for navbar toggle -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
